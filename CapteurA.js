@@ -1,5 +1,4 @@
-
-class CameraA {
+export class CameraA {
  constructor(location) {
     this.location = location;
  } // location = nom de la pièce
@@ -8,7 +7,7 @@ class CameraA {
  } // Déclenche un message d’alerte (string)
 }
 
-class TemperatureSensorA {
+export class TemperatureSensorA {
  constructor(location, threshold) {
     this.location = location;
     this.threshold = threshold;
@@ -17,7 +16,8 @@ class TemperatureSensorA {
    return "Température est de " + this.threshold + "dans la pièce " + this.location;
  } // Déclenche un message d’alerte (string)
 }
-class MotionSensorA {
+
+export class MotionSensorA {
  constructor(location) {
     this.location = location;
  }

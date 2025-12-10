@@ -1,4 +1,4 @@
-class Piece {
+export class Piece {
   constructor(name) {
     this.name = name;
     this.sensors = [];

@@ -1,4 +1,4 @@
-class ThermalSensorB {
+export class ThermalSensorB {
  constructor(position) {
     this.position = position;
  } // position {
@@ -11,7 +11,7 @@ class ThermalSensorB {
  } // Déclenche une donnée complexe json, voir ci dessous
 }
 
-class ThermalSensorBAdapter {
+export class ThermalSensorBAdapter {
  constructor(thermalSensorB) {
     this.sensor = thermalSensorB;
  }

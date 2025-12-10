@@ -1,4 +1,4 @@
-class EmailNotif{
+export class EmailNotif{
     constructor(email){
         this.email = email;
     }
@@ -8,7 +8,7 @@ class EmailNotif{
     }
 }
 
-class LogNotif{
+export class LogNotif{
     constructor(logName){
         this.logName = logName;
     }
@@ -17,7 +17,7 @@ class LogNotif{
     }
 }
 
-class DiscordNotif{
+export class DiscordNotif{
     constructor(BotDiscord){
         this.BotDiscord = BotDiscord;
     }
