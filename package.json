@@ -1,0 +1,20 @@
+{
+  "name": "eval_design_patterns",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "homepage": "https://github.com/M-darius/Eval_DESIGN_PATTERNS#readme",
+  "bugs": {
+    "url": "https://github.com/M-darius/Eval_DESIGN_PATTERNS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-darius/Eval_DESIGN_PATTERNS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

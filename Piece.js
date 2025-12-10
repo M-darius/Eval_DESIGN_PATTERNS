@@ -1,29 +1,29 @@
 export class Piece {
-  constructor(name) {
-    this.name = name;
-    this.sensors = [];
-    this.observers = [];
-  }
-
-  addSensor(sensor) {
-    this.sensors.push(sensor);
-  }
-
-  addNotif(notif) {
-    this.notif.push(notif);
-  }
-
-  checkSensors() {
-    for (const sensor of this.sensors) {
-      const alertMessage = sensor.detect();
-      this.notifierAll(alertMessage);
+    constructor(name) {
+        this.name = name;
+        this.sensors = [];
+        this.observers = [];
     }
-  }
 
-  notifierAll(message) {
-    const fullMessage = this.name + " : " + message;
-    for (const observer of this.observers) {
-      observer.send(fullMessage);
+    addSensor(sensor) {
+        this.sensors.push(sensor);
     }
-  }
+
+    addNotif(observer) {
+        this.observers.push(observer);
+    }
+
+    notifierAll(message) {
+        const formatted = this.name + " : " + message;
+        for (const obs of this.observers) {
+            obs.send(formatted);
+        }
+    }
+
+    checkSensors() {
+        for (const sensor of this.sensors) {
+            const message = sensor.detect();
+            this.notifierAll(message);
+        }
+    }
 }
