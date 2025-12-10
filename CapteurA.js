@@ -3,7 +3,7 @@ export class CameraA {
     this.location = location;
  } // location = nom de la pièce
  detect() {
-   return "Alterte dans la pièce" + this.location;
+   return "Alterte dans la pièce " + this.location;
  } // Déclenche un message d’alerte (string)
 }
 
@@ -13,7 +13,7 @@ export class TemperatureSensorA {
     this.threshold = threshold;
  } // location = nom de la pièce, threshold = température de déclenchement
  detect() {
-   return "Température est de " + this.threshold + "dans la pièce " + this.location;
+   return "Température est de " + this.threshold + " dans la pièce " + this.location;
  } // Déclenche un message d’alerte (string)
 }
 

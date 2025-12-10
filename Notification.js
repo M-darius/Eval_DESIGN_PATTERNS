@@ -4,7 +4,7 @@ export class EmailNotif{
     }
 
     send(message){ 
-        console.log("Email envoyer à =>", this.email , "avec le message =>", message);
+        console.log("Email envoyer à => ", this.email , " avec le message => ", message);
     }
 }
 
@@ -13,7 +13,7 @@ export class LogNotif{
         this.logName = logName;
     }
     send(message){
-        console.log("Log dans =>", this.logName , "avec le message =>", message);
+        console.log("Log dans => ", this.logName , " avec le message =>", message);
     }
 }
 
@@ -22,6 +22,6 @@ export class DiscordNotif{
         this.BotDiscord = BotDiscord;
     }
     send(message){
-        console.log("Message Discord envoyer avec =>", this.BotDiscord , "avec le message =>", message);
+        console.log("Message Discord envoyer avec =>  ", this.BotDiscord , " avec le message => ", message);
     }
 }
